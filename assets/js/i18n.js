@@ -137,10 +137,6 @@ const translations = {
         <p class="lead reveal is-in">I'm Sergio Toro Codo. An electronics engineer by training, with my focus on business. I work where engineering, people and the market meet.</p>
         <p class="reveal is-in">I studied Electronics and Automation Engineering at the University of Zaragoza (EINA) and I'm on an exchange in Mechanical Engineering at <strong>Nanjing Tech University</strong> (China). That technical base lets me read a drawing, question a BOM and understand where the cost is. My experience in China is teaching me how things are made, negotiated and how trust is built.</p>
         <p class="reveal is-in">I've worked in R&amp;D at <strong>Escribano Mechanical &amp; Engineering</strong> (EM&amp;E / AUNAV), on the board of <strong>IEEE SB UZ</strong> and in the workshop supporting students. I'm now building <strong>ZCH Sourcing</strong>, a sourcing company in China, and <strong>RockMap</strong>, a travel planning app. I care about leadership, teamwork and the relationships that make a project happen.</p>
-        <blockquote class="quote reveal is-in">
-          <p>“My work starts where the catalogue ends.”</p>
-          <cite>— Sergio Toro Codo · ZCH Sourcing</cite>
-        </blockquote>
         <dl class="facts reveal is-in">
           <div><dt>Where</dt><dd>Nanjing, CN / Zaragoza, ES<br><span>China · current</span></dd></div>
           <div><dt>Focus</dt><dd>Sourcing and supplier development<br><span>ZCH Sourcing · launching soon</span></dd></div>
@@ -199,8 +195,7 @@ const translations = {
         <p class="project__note">In development; more details soon.</p>`,
 
       '.work .label': '<span class="label__num">03</span> Previous projects',
-      '.work .section-title': 'The technical<br><em>foundation.</em>',
-      '.work .section-intro': 'Before sourcing, engineering. Four projects that taught me to build, iterate and work with very different people.',
+      '.work .section-title': 'My most technical<br><em>projects.</em>',
       '[data-project="jrg25"] .project__body': projectBody({
         no: '01', tag: 'Robotics', year: '2026', label: 'View project',
         title: 'JRG-25 · autonomous mobile robot',
@@ -288,7 +283,6 @@ const translations = {
 
       '.capabilities .label': '<span class="label__num">04</span> Capabilities',
       '.capabilities .section-title': 'Business, people<br>and technical <em>depth.</em>',
-      '.capabilities .section-intro': "What I bring isn't a list of tools: it's the ability to move between the factory, the spreadsheet and the negotiating table.",
       '.cap-panel--primary .cap-panel__label': '01 / Business & people',
       '.cap-panel--primary h3': 'What I bring<br>to the table.',
       '.cap-panel--primary .cap-list': capList([
@@ -308,17 +302,12 @@ const translations = {
         ['04', 'Data & vision', 'Python, OpenCV, PyTorch.'],
         ['05', 'Web product', 'HTML, CSS, JavaScript, Three.js.'],
         ['06', 'Industrial', 'PLC, 4–20 mA, Modbus.'],
-        ['07', 'Tools', 'ROS 2, SLAM, Linux, Git, MATLAB, SQL.'],
+        ['07', 'Tools', 'Linux, Git, MATLAB, SQL.'],
       ]),
       '.cap-panel__note': "I can read a drawing, question a BOM and see where the cost is. That's why I negotiate with context, not just price.",
-      '.principles': `
-        <div><span class="mono">01</span><h3>First, I understand.</h3><p>Before negotiating, I understand the product, the process and the risk.</p></div>
-        <div><span class="mono">02</span><h3>Then I negotiate.</h3><p>With information, not haste. The best price isn't always the best cost.</p></div>
-        <div><span class="mono">03</span><h3>A long-term relationship.</h3><p>A supplier isn't a transaction; it's part of the chain.</p></div>`,
 
       '.path .label': '<span class="label__num">05</span> Journey',
       '.path .section-title': 'From engineering<br>to <em>sourcing.</em>',
-      '.path .section-intro': 'A path between Spain and China, with engineering as the base and business as the direction.',
       '.timeline': [
         timelineItem('2026—', 'Entrepreneurship · China / Spain', 'Founder — ZCH Sourcing', 'ZCH Sourcing is born: sourcing in China with technical judgement and a business mindset. Website and services in preparation.'),
         timelineItem('2026—', 'Product · RockMap', 'RockMap', 'Travel planning app in development: routes, stages and decisions in one place.'),
@@ -446,10 +435,6 @@ const translations = {
         <p class="lead reveal is-in">我是 Sergio Toro Codo。工程出身，把重心放在商业。我在技术、人和市场的交汇处工作。</p>
         <p class="reveal is-in">我在萨拉戈萨大学（EINA）学习电子与自动化工程，现在在<strong>南京工业大学</strong>交换，读机械工程。工程背景让我能读懂图纸、质疑 BOM，并判断成本在哪里。在中国的经历让我理解产品如何制造、如何谈判，以及信任如何建立。</p>
         <p class="reveal is-in">我曾在 <strong>Escribano Mechanical &amp; Engineering</strong>（EM&amp;E / AUNAV）做研发，在 <strong>IEEE SB UZ</strong> 理事会工作，也在工坊里帮助学生。现在我正在创建 <strong>ZCH Sourcing</strong>——一家在中国的采购公司，以及 <strong>RockMap</strong>——一款旅行规划应用。我关心领导力、团队合作，以及让项目真正落地的关系。</p>
-        <blockquote class="quote reveal is-in">
-          <p>“我的工作，从产品目录结束的地方开始。”</p>
-          <cite>— Sergio Toro Codo · ZCH Sourcing</cite>
-        </blockquote>
         <dl class="facts reveal is-in">
           <div><dt>在哪里</dt><dd>中国南京 / 西班牙萨拉戈萨<br><span>中国 · 当前</span></dd></div>
           <div><dt>重点</dt><dd>采购与供应商开发<br><span>ZCH Sourcing · 筹备中</span></dd></div>
@@ -508,8 +493,7 @@ const translations = {
         <p class="project__note">开发中；更多细节即将公布。</p>`,
 
       '.work .label': '<span class="label__num">03</span> 以往项目',
-      '.work .section-title': '技术<br><em>基础。</em>',
-      '.work .section-intro': '采购之前，是工程。四个项目，教会我构建、迭代，以及和不同的人合作。',
+      '.work .section-title': '我最具技术性的<br><em>项目。</em>',
       '[data-project="jrg25"] .project__body': projectBody({
         no: '01', tag: '机器人', year: '2026', label: '查看项目',
         title: 'JRG-25 · 自主移动机器人',
@@ -597,7 +581,6 @@ const translations = {
 
       '.capabilities .label': '<span class="label__num">04</span> 能力',
       '.capabilities .section-title': '商业、团队<br>与技术<em>基础。</em>',
-      '.capabilities .section-intro': '我带来的不是一张工具清单，而是能在工厂、表格和谈判桌之间切换的能力。',
       '.cap-panel--primary .cap-panel__label': '01 / 商业与人',
       '.cap-panel--primary h3': '我能带来<br>什么。',
       '.cap-panel--primary .cap-list': capList([
@@ -617,17 +600,12 @@ const translations = {
         ['04', '数据与视觉', 'Python、OpenCV、PyTorch。'],
         ['05', '网页产品', 'HTML、CSS、JavaScript、Three.js。'],
         ['06', '工业控制', 'PLC、4–20 mA、Modbus。'],
-        ['07', '工具', 'ROS 2、SLAM、Linux、Git、MATLAB、SQL。'],
+        ['07', '工具', 'Linux、Git、MATLAB、SQL。'],
       ]),
       '.cap-panel__note': '我能读图纸、质疑 BOM、判断成本在哪里。所以我谈判时带着上下文，不只看价格。',
-      '.principles': `
-        <div><span class="mono">01</span><h3>先理解。</h3><p>谈判之前，先理解产品、工艺和风险。</p></div>
-        <div><span class="mono">02</span><h3>再谈判。</h3><p>用信息，而不是急躁。最低价格不一定是最低成本。</p></div>
-        <div><span class="mono">03</span><h3>长期关系。</h3><p>供应商不是一次交易，而是供应链的一部分。</p></div>`,
 
       '.path .label': '<span class="label__num">05</span> 经历',
       '.path .section-title': '从工程<br>到<em>采购。</em>',
-      '.path .section-intro': '一段穿越西班牙与中国的路径，以工程为基础，以商业为方向。',
       '.timeline': [
         timelineItem('2026—', '创业 · 中国 / 西班牙', '创始人 — ZCH Sourcing', 'ZCH Sourcing 成立：以工程判断和商业思维在中国做采购。网站与服务筹备中。'),
         timelineItem('2026—', '产品 · RockMap', 'RockMap', '旅行规划应用开发中：把路线、阶段和决定放在一个地方。'),

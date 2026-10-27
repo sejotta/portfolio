@@ -112,7 +112,7 @@ Variantes: `btn--accent`, `btn--ghost`, `btn--ink`, `btn--pill`. En fondos claro
       <button class="project__open" type="button" aria-haspopup="dialog">Título</button>
     </h3>
     <p class="project__summary">Resumen corto.</p>
-    <ul class="tags"><li>ROS 2</li><li>OpenCV</li></ul>
+    <ul class="tags"><li>Linux</li><li>OpenCV</li></ul>
     <span class="project__cta">Ver ficha</span>
   </div>
   <div class="project__more" hidden>

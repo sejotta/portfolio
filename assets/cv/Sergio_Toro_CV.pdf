@@ -16,7 +16,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
 endobj
 6 0 obj
-<< /Length 9579 >>
+<< /Length 9420 >>
 stream
 BT /F1 21 Tf 0.078 0.196 0.353 rg 1 0 0 1 38.00 791.51 Tm (Sergio Toro Codo) Tj ET
 BT /F5 8.6 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 776.18 Tm (Robotics & Automation Engineering Student - Embedded Systems, Computer Vision, Robotics) Tj ET
@@ -27,8 +27,8 @@ BT /F1 10.2 Tf 0.078 0.196 0.353 rg 1 0 0 1 38.00 731.43 Tm (PROFESSIONAL SUMMAR
 BT /F2 8.9 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 713.45 Tm (Electronics and Automation Engineering student \(Universidad de Zaragoza, EINA\), on an exchange year in Mechanical Engineering at Nanjing) Tj ET
 BT /F2 8.9 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 702.25 Tm (Tech University \(China\). 3+ years building autonomous mobile robots end-to-end: mechanical design, custom PCB electronics, embedded) Tj ET
 BT /F2 8.9 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 691.05 Tm (firmware and control software. IEEE student branch leader \(robotics & rocketry\). Strong hands-on profile in robotics, embedded systems,) Tj ET
-BT /F2 8.9 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 679.85 Tm (computer vision, deep learning, control theory \(PID\), sensor fusion, SLAM/odometry, simulation and testing, with industrial internship) Tj ET
-BT /F2 8.9 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 668.65 Tm (experience. Interested in autonomous/industrial robotics, mapping & localization, simulation and hardware testing.) Tj ET
+BT /F2 8.9 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 679.85 Tm (computer vision, deep learning, control theory \(PID\), sensor fusion, odometry, simulation and testing, with industrial internship experience.) Tj ET
+BT /F2 8.9 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 668.65 Tm (Interested in autonomous/industrial robotics, simulation and hardware testing.) Tj ET
 BT /F1 10.2 Tf 0.078 0.196 0.353 rg 1 0 0 1 38.00 648.43 Tm (TECHNICAL SKILLS) Tj ET
 0.078 0.196 0.353 RG 0.7 w 38 644.39 m 557.28 644.39 l S
 0.078 0.196 0.353 rg 40.00 632.73 1.7 1.7 re f
@@ -42,63 +42,62 @@ BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 595.73 Tm (ESP-NOW, Bluetooth, 
 0.078 0.196 0.353 rg 40.00 585.33 1.7 1.7 re f
 BT /F3 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 583.13 Tm (Control & Robotics: ) Tj ET
 BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 124.67 583.13 Tm (PID/PI control with anti-windup, odometry / differential kinematics, finite state machines \(FSM\), hierarchical control,) Tj ET
-BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 572.03 Tm (SLAM fundamentals, TinyML edge inference, LIDAR-based localization.) Tj ET
+BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 572.03 Tm (TinyML edge inference.) Tj ET
 0.078 0.196 0.353 rg 40.00 561.63 1.7 1.7 re f
 BT /F3 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 559.43 Tm (Computer Vision & ML: ) Tj ET
 BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 141.11 559.43 Tm (OpenCV, PyTorch, TensorFlow/Keras, SIFT/ORB, SuperPoint/SuperGlue, RANSAC, homography,) Tj ET
-BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 548.33 Tm (fundamental/essential matrices, DLT triangulation, PnP, optical flow, incremental SLAM, transfer learning \(MobileNetV3, EfficientNet,) Tj ET
-BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 537.23 Tm (Xception\), CNNs, FCN.) Tj ET
-0.078 0.196 0.353 rg 40.00 526.83 1.7 1.7 re f
-BT /F3 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 524.63 Tm (CAD & Manufacturing: ) Tj ET
-BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 137.80 524.63 Tm (SolidWorks, Fusion 360, 3D printing \(FDM\), technical drawing, mechanical integration.) Tj ET
-0.078 0.196 0.353 rg 40.00 514.23 1.7 1.7 re f
-BT /F3 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 512.03 Tm (Languages: ) Tj ET
-BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 92.26 512.03 Tm (Spanish \(native\), English \(B2\), Mandarin Chinese \(HSK 2, ongoing\).) Tj ET
-BT /F1 10.2 Tf 0.078 0.196 0.353 rg 1 0 0 1 38.00 490.33 Tm (PROFESSIONAL EXPERIENCE) Tj ET
-0.078 0.196 0.353 RG 0.7 w 38 486.29 m 557.28 486.29 l S
-BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 471.96 Tm (Board Member - Electronic Rocketry & Robotics Section) Tj ET
-BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 492.56 471.96 Tm (Jan 2026 - Present) Tj ET
-BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 461.33 Tm (IEEE Student Branch UZ, Zaragoza) Tj ET
-0.078 0.196 0.353 rg 40.00 453.03 1.7 1.7 re f
-BT /F3 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 450.83 Tm (Alunizar \(rocketry\): ) Tj ET
-BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 123.37 450.83 Tm (electronic design for in-flight data acquisition and a solid-motor test bench \(ESP32-S3, thermocouple MAX31865, 24-bit) Tj ET
-BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 439.73 Tm (ADC ADS1220, LoRa E220 telemetry\).) Tj ET
-0.078 0.196 0.353 rg 40.00 429.33 1.7 1.7 re f
-BT /F3 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 427.13 Tm (Robotics Section: ) Tj ET
-BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 114.80 427.13 Tm (10th ASTI Robotics Challenge; mentoring students, transferring hands-on embedded & design skills.) Tj ET
-BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 409.06 Tm (R&D Electronic Engineer - Curricular Internship \(Robotic Systems\)) Tj ET
-BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 504.39 409.06 Tm (Jun - Aug 2025) Tj ET
-BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 398.43 Tm (Escribano Mechanical & Engineering \(EM&E Group / AUNAV\), Binéfar, Spain) Tj ET
-0.078 0.196 0.353 rg 40.00 390.13 1.7 1.7 re f
-BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 387.93 Tm (PCB design in Altium, PCB error correction, power-supply design, technical research for robotic systems.) Tj ET
-0.078 0.196 0.353 rg 40.00 377.53 1.7 1.7 re f
-BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 375.33 Tm (Assembly, testing and validation of robotic systems in an industrial R&D team.) Tj ET
-BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 357.26 Tm (Student Member & Vocal \(Marketing & Communications\)) Tj ET
-BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 487.42 357.26 Tm (Oct 2024 - Feb 2026) Tj ET
-BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 346.63 Tm (IEEE SB UZ, Zaragoza) Tj ET
-0.078 0.196 0.353 rg 40.00 338.33 1.7 1.7 re f
-BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 336.13 Tm (Branch communications and outreach; student branch activity management.) Tj ET
-BT /F1 10.2 Tf 0.078 0.196 0.353 rg 1 0 0 1 38.00 309.43 Tm (TECHNICAL PROJECTS) Tj ET
-0.078 0.196 0.353 RG 0.7 w 38 305.39 m 557.28 305.39 l S
-BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 291.06 Tm (JRG-25 - Autonomous Mobile Robot, ASTI Robotics Challenge \(ARC 2026\)) Tj ET
-BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 500.05 291.06 Tm (Dec 2024 - 2026) Tj ET
-BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 280.43 Tm (Team "Mesa Paso 43" \(IEEE SB UZ\)) Tj ET
-BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 268.50 Tm (Skills developed: mechanical design \(SolidWorks/Fusion 360, 3D printing\), custom PCB design \(KiCad\), sensor integration \(ToF, IMU, encoders,) Tj ET
-BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 257.70 Tm (I2C multiplexing\), embedded C++ control \(PID with anti-windup, differential odometry, FSM design\), layered firmware architecture with CI, GUI) Tj ET
-BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 246.90 Tm (development \(Python/Tkinter\), wireless protocols \(ESP-NOW, Bluetooth SPP\), project & budget management.) Tj ET
-BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 230.56 Tm (S.P.I.T. - Early Wildfire Prevention System, WED 2026 Hackathon) Tj ET
-BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 527.29 230.56 Tm (Mar 2026) Tj ET
-BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 219.93 Tm (Team InnoviZar) Tj ET
-BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 208.00 Tm (Skills developed: UAV-based sensing \(RGB + thermal imaging\), on-board TinyML inference, PLC control with pressure/flow feedback, hydraulic) Tj ET
-BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 197.20 Tm (system sizing, cross-disciplinary rapid prototyping under hackathon constraints.) Tj ET
-BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 180.86 Tm (AGROPLANT - NASA Space Apps Challenge 2025) Tj ET
-BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 528.47 180.86 Tm (Oct 2025) Tj ET
-BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 170.23 Tm (Hybrid physical-digital agricultural game) Tj ET
-BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 158.30 Tm (Skills developed: ESP32/RFID hardware-software integration, Wi-Fi communication protocols, data-driven design using open scientific datasets.) Tj ET
-BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 141.96 Tm (Repair Café & Workshop \(EINA Agenda 2030 Committee\)) Tj ET
-BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 491.78 141.96 Tm (Mar 2024 - Present) Tj ET
-BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 131.33 Tm (Electronics repair workshops for students) Tj ET
-BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 119.40 Tm (Skills developed: fault diagnosis, technical teaching & knowledge transfer, sustainability-oriented engineering practice.) Tj ET
+BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 548.33 Tm (fundamental/essential matrices, DLT triangulation, PnP, optical flow, transfer learning \(MobileNetV3, EfficientNet, Xception\), CNNs, FCN.) Tj ET
+0.078 0.196 0.353 rg 40.00 537.93 1.7 1.7 re f
+BT /F3 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 535.73 Tm (CAD & Manufacturing: ) Tj ET
+BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 137.80 535.73 Tm (SolidWorks, Fusion 360, 3D printing \(FDM\), technical drawing, mechanical integration.) Tj ET
+0.078 0.196 0.353 rg 40.00 525.33 1.7 1.7 re f
+BT /F3 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 523.13 Tm (Languages: ) Tj ET
+BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 92.26 523.13 Tm (Spanish \(native\), English \(B2\), Mandarin Chinese \(HSK 2, ongoing\).) Tj ET
+BT /F1 10.2 Tf 0.078 0.196 0.353 rg 1 0 0 1 38.00 501.43 Tm (PROFESSIONAL EXPERIENCE) Tj ET
+0.078 0.196 0.353 RG 0.7 w 38 497.39 m 557.28 497.39 l S
+BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 483.06 Tm (Board Member - Electronic Rocketry & Robotics Section) Tj ET
+BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 492.56 483.06 Tm (Jan 2026 - Present) Tj ET
+BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 472.43 Tm (IEEE Student Branch UZ, Zaragoza) Tj ET
+0.078 0.196 0.353 rg 40.00 464.13 1.7 1.7 re f
+BT /F3 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 461.93 Tm (Alunizar \(rocketry\): ) Tj ET
+BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 123.37 461.93 Tm (electronic design for in-flight data acquisition and a solid-motor test bench \(ESP32-S3, thermocouple MAX31865, 24-bit) Tj ET
+BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 450.83 Tm (ADC ADS1220, LoRa E220 telemetry\).) Tj ET
+0.078 0.196 0.353 rg 40.00 440.43 1.7 1.7 re f
+BT /F3 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 438.23 Tm (Robotics Section: ) Tj ET
+BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 114.80 438.23 Tm (10th ASTI Robotics Challenge; mentoring students, transferring hands-on embedded & design skills.) Tj ET
+BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 420.16 Tm (R&D Electronic Engineer - Curricular Internship \(Robotic Systems\)) Tj ET
+BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 504.39 420.16 Tm (Jun - Aug 2025) Tj ET
+BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 409.53 Tm (Escribano Mechanical & Engineering \(EM&E Group / AUNAV\), Binéfar, Spain) Tj ET
+0.078 0.196 0.353 rg 40.00 401.23 1.7 1.7 re f
+BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 399.03 Tm (PCB design in Altium, PCB error correction, power-supply design, technical research for robotic systems.) Tj ET
+0.078 0.196 0.353 rg 40.00 388.63 1.7 1.7 re f
+BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 386.43 Tm (Assembly, testing and validation of robotic systems in an industrial R&D team.) Tj ET
+BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 368.36 Tm (Student Member & Vocal \(Marketing & Communications\)) Tj ET
+BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 487.42 368.36 Tm (Oct 2024 - Feb 2026) Tj ET
+BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 357.73 Tm (IEEE SB UZ, Zaragoza) Tj ET
+0.078 0.196 0.353 rg 40.00 349.43 1.7 1.7 re f
+BT /F2 8.8 Tf 0.070 0.070 0.070 rg 1 0 0 1 48.00 347.23 Tm (Branch communications and outreach; student branch activity management.) Tj ET
+BT /F1 10.2 Tf 0.078 0.196 0.353 rg 1 0 0 1 38.00 320.53 Tm (TECHNICAL PROJECTS) Tj ET
+0.078 0.196 0.353 RG 0.7 w 38 316.49 m 557.28 316.49 l S
+BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 302.16 Tm (JRG-25 - Autonomous Mobile Robot, ASTI Robotics Challenge \(ARC 2026\)) Tj ET
+BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 500.05 302.16 Tm (Dec 2024 - 2026) Tj ET
+BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 291.53 Tm (Team "Mesa Paso 43" \(IEEE SB UZ\)) Tj ET
+BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 279.60 Tm (Skills developed: mechanical design \(SolidWorks/Fusion 360, 3D printing\), custom PCB design \(KiCad\), sensor integration \(ToF, IMU, encoders,) Tj ET
+BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 268.80 Tm (I2C multiplexing\), embedded C++ control \(PID with anti-windup, differential odometry, FSM design\), layered firmware architecture with CI, GUI) Tj ET
+BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 258.00 Tm (development \(Python/Tkinter\), wireless protocols \(ESP-NOW, Bluetooth SPP\), project & budget management.) Tj ET
+BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 241.66 Tm (S.P.I.T. - Early Wildfire Prevention System, WED 2026 Hackathon) Tj ET
+BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 527.29 241.66 Tm (Mar 2026) Tj ET
+BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 231.03 Tm (Team InnoviZar) Tj ET
+BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 219.10 Tm (Skills developed: UAV-based sensing \(RGB + thermal imaging\), on-board TinyML inference, PLC control with pressure/flow feedback, hydraulic) Tj ET
+BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 208.30 Tm (system sizing, cross-disciplinary rapid prototyping under hackathon constraints.) Tj ET
+BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 191.96 Tm (AGROPLANT - NASA Space Apps Challenge 2025) Tj ET
+BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 528.47 191.96 Tm (Oct 2025) Tj ET
+BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 181.33 Tm (Hybrid physical-digital agricultural game) Tj ET
+BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 169.40 Tm (Skills developed: ESP32/RFID hardware-software integration, Wi-Fi communication protocols, data-driven design using open scientific datasets.) Tj ET
+BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 153.06 Tm (Repair Café & Workshop \(EINA Agenda 2030 Committee\)) Tj ET
+BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 491.78 153.06 Tm (Mar 2024 - Present) Tj ET
+BT /F4 8.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 142.43 Tm (Electronics repair workshops for students) Tj ET
+BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 130.50 Tm (Skills developed: fault diagnosis, technical teaching & knowledge transfer, sustainability-oriented engineering practice.) Tj ET
 BT /F5 6.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 38.00 20.70 Tm (Sergio Toro Codo · Curriculum Vitae) Tj ET
 BT /F5 6.8 Tf 0.353 0.373 0.412 rg 1 0 0 1 522.50 20.70 Tm (Page 1 of 2) Tj ET
 endstream
@@ -107,12 +106,12 @@ endobj
 << /Type /Page /Parent 10 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R /F5 5 0 R >> >> /Contents 6 0 R >>
 endobj
 8 0 obj
-<< /Length 3324 >>
+<< /Length 3317 >>
 stream
 BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 800.56 Tm (Additional Projects) Tj ET
 BT /F5 7.1 Tf 0.353 0.373 0.412 rg 1 0 0 1 514.65 800.56 Tm (2025 - 2026) Tj ET
-BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 788.50 Tm (Skills developed: embedded video streaming \(ESP32-S3, MJPEG/HTTP\), computer vision & SLAM \(feature matching, multiview geometry,) Tj ET
-BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 777.70 Tm (transfer learning with PyTorch/Keras\).) Tj ET
+BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 788.50 Tm (Skills developed: embedded video streaming \(ESP32-S3, MJPEG/HTTP\), computer vision \(feature matching, multiview geometry, transfer learning) Tj ET
+BT /F2 8.7 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 777.70 Tm (with PyTorch/Keras\).) Tj ET
 BT /F1 10.2 Tf 0.078 0.196 0.353 rg 1 0 0 1 38.00 752.73 Tm (EDUCATION) Tj ET
 0.078 0.196 0.353 RG 0.7 w 38 748.69 m 557.28 748.69 l S
 BT /F3 9.4 Tf 0.070 0.070 0.070 rg 1 0 0 1 38.00 734.36 Tm (B.Sc. Electronic and Automation Engineering \(Robotics & Automation\)) Tj ET
@@ -165,14 +164,14 @@ xref
 0000000314 00000 n 
 0000000414 00000 n 
 0000000511 00000 n 
-0000010141 00000 n 
-0000010314 00000 n 
-0000013689 00000 n 
-0000013862 00000 n 
-0000013926 00000 n 
-0000013977 00000 n 
+0000009982 00000 n 
+0000010155 00000 n 
+0000013523 00000 n 
+0000013696 00000 n 
+0000013760 00000 n 
+0000013811 00000 n 
 trailer
 << /Size 13 /Root 11 0 R /Info 12 0 R >>
 startxref
-14182
+14016
 %%EOF
