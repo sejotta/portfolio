@@ -1,0 +1,6 @@
+# Archivos temporales y de desarrollo
+.tmp/
+tools/
+.DS_Store
+Thumbs.db
+*.log

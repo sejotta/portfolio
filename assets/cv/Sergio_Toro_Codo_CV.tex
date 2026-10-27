@@ -1,0 +1,134 @@
+% =====================================================================
+%  CV — Sergio Toro Codo
+%  Compilar: pdflatex x2 | A4, formato clásico LaTeX (una columna)
+% =====================================================================
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.1cm,top=0.85cm,bottom=0.85cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+\definecolor{cvblue}{RGB}{20,50,90}
+\definecolor{cvgray}{RGB}{90,95,105}
+
+% ---- Encabezados de sección: estilo clásico, MAYÚSCULAS reales (no
+%      \scshape, que en la extracción de texto separa letras, p.ej.
+%      "P ROFESSIONAL" en vez de "PROFESSIONAL") + regla horizontal ----
+\titleformat{\section}
+  {\large\bfseries\color{cvblue}}
+  {}{0em}{}
+  [{\color{cvblue}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\setlist[itemize]{leftmargin=1.1em,itemsep=0.5pt,topsep=1pt,parsep=0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\sloppy
+\emergencystretch=2em
+
+\newcommand{\entry}[4]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & \textit{\small #2}\\
+    \textcolor{cvgray}{\small #3} & \textcolor{cvgray}{\small #4}\\
+  \end{tabularx}\par\vspace{0.5pt}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% ================= CABECERA =================
+\begin{center}
+  {\LARGE\bfseries\color{cvblue} Sergio Toro Codo}\\[2pt]
+  {\small Robotics \& Automation Engineering Student --- Embedded Systems, Computer Vision, Robotics}\\[3pt]
+  {\footnotesize
+    storocodo@gmail.com \quad$\vert$\quad Nanjing, CN / Zaragoza, ES
+  }
+\end{center}
+\vspace{1pt}
+{\color{cvblue}\hrule height 1.2pt}
+\vspace{4pt}
+
+% ================= RESUMEN =================
+\section*{Professional Summary}
+\textbf{Electronics and Automation Engineering} student (Universidad de Zaragoza, EINA), on an exchange year in \textbf{Mechanical Engineering} at \textbf{Nanjing Tech University} (China). 3+ years building \textbf{autonomous mobile robots} end-to-end: mechanical design, custom \textbf{PCB} electronics, \textbf{embedded firmware} and control software. IEEE student branch leader (robotics \& rocketry). Strong hands-on profile in \textbf{robotics, embedded systems, computer vision, deep learning, control theory (PID), sensor fusion, SLAM/odometry, simulation and testing}, with industrial internship experience. Interested in \textbf{autonomous/industrial robotics}, \textbf{mapping \& localization}, \textbf{simulation} and \textbf{hardware testing}.
+
+% ================= SKILLS =================
+\section*{Technical Skills}
+\begin{itemize}
+  \item \textbf{Programming:} Python (Tkinter, NumPy, OpenCV, Plotly), C/C++ (embedded), MATLAB, SQL, Git/GitHub, Linux, PlatformIO, Arduino.
+  \item \textbf{Embedded \& Electronics:} ESP32/ESP32-S3/ESP32-CAM, \textbf{PCB design (KiCad, Altium)}, power electronics (DC-DC MP1584EN), motor drivers (H-bridge), sensors: ToF (VL53L0X/L1X), ultrasonic, \textbf{IMU (BNO055)}, encoders; buses I\textsuperscript{2}C (XSHUT multiplexing), SPI, UART; \textbf{ESP-NOW}, Bluetooth, Wi-Fi, LoRa telemetry.
+  \item \textbf{Control \& Robotics:} \textbf{PID/PI control with anti-windup}, odometry / differential kinematics, finite state machines (FSM), hierarchical control, \textbf{SLAM fundamentals}, \textbf{TinyML} edge inference, LIDAR-based localization.
+  \item \textbf{Computer Vision \& ML:} OpenCV, \textbf{PyTorch, TensorFlow/Keras}, SIFT/ORB, \textbf{SuperPoint/SuperGlue}, RANSAC, homography, fundamental/essential matrices, DLT triangulation, PnP, optical flow, incremental SLAM, \textbf{transfer learning (MobileNetV3, EfficientNet, Xception)}, CNNs, FCN.
+  \item \textbf{CAD \& Manufacturing:} \textbf{SolidWorks, Fusion 360}, 3D printing (FDM), technical drawing, mechanical integration.
+  \item \textbf{Languages:} Spanish (native), English (B2), Mandarin Chinese (HSK 2, ongoing).
+\end{itemize}
+
+% ================= EXPERIENCIA =================
+\section*{Professional Experience}
+\entry{Board Member --- Electronic Rocketry \& Robotics Section}{Jan 2026 -- Present}
+      {IEEE Student Branch UZ, Zaragoza}{}
+\begin{itemize}
+  \item \textbf{Alunizar (rocketry):} electronic design for in-flight data acquisition and a \textbf{solid-motor test bench} (ESP32-S3, thermocouple MAX31865, 24-bit ADC ADS1220, LoRa E220 telemetry).
+  \item \textbf{Robotics Section:} 10th ASTI Robotics Challenge; mentoring students, transferring hands-on embedded \& design skills.
+\end{itemize}
+
+\entry{R\&D Electronic Engineer --- Curricular Internship (Robotic Systems)}{Jun -- Aug 2025}
+      {Escribano Mechanical \& Engineering (EM\&E Group / AUNAV), Binéfar, Spain}{}
+\begin{itemize}
+  \item \textbf{PCB design in Altium}, PCB error correction, power-supply design, technical research for robotic systems.
+  \item Assembly, testing and validation of robotic systems in an industrial R\&D team.
+\end{itemize}
+
+\entry{Student Member \& Vocal (Marketing \& Communications)}{Oct 2024 -- Feb 2026}
+      {IEEE SB UZ, Zaragoza}{}
+\begin{itemize}
+  \item Branch communications and outreach; student branch activity management.
+\end{itemize}
+
+% ================= PROYECTOS =================
+\section*{Technical Projects}
+\entry{JRG-25 --- Autonomous Mobile Robot, ASTI Robotics Challenge (ARC 2026)}{Dec 2024 -- 2026}
+      {Team ``Mesa Paso 43'' (IEEE SB UZ)}{}
+\textit{Skills developed:} mechanical design (SolidWorks/Fusion 360, 3D printing), \textbf{custom PCB design (KiCad)}, sensor integration (ToF, IMU, encoders, I\textsuperscript{2}C multiplexing), embedded C++ control (\textbf{PID with anti-windup}, differential odometry, \textbf{FSM} design), layered firmware architecture with CI, GUI development (Python/Tkinter), wireless protocols (ESP-NOW, Bluetooth SPP), project \& budget management.
+
+\entry{S.P.I.T. --- Early Wildfire Prevention System, WED 2026 Hackathon}{Mar 2026}
+      {Team InnoviZar}{}
+\textit{Skills developed:} UAV-based sensing (RGB + thermal imaging), \textbf{on-board TinyML inference}, PLC control with pressure/flow feedback, hydraulic system sizing, cross-disciplinary rapid prototyping under hackathon constraints.
+
+\entry{AGROPLANT --- NASA Space Apps Challenge 2025}{Oct 2025}
+      {Hybrid physical-digital agricultural game}{}
+\textit{Skills developed:} ESP32/RFID hardware-software integration, Wi-Fi communication protocols, data-driven design using open scientific datasets.
+
+\entry{Repair Café \& Workshop (EINA Agenda 2030 Committee)}{Mar 2024 -- Present}
+      {Electronics repair workshops for students}{}
+\textit{Skills developed:} fault diagnosis, technical teaching \& knowledge transfer, sustainability-oriented engineering practice.
+
+\entry{Additional Projects}{2025 -- 2026}{}{}
+\textit{Skills developed:} embedded video streaming (ESP32-S3, MJPEG/HTTP), \textbf{computer vision \& SLAM} (feature matching, multiview geometry, transfer learning with PyTorch/Keras).
+
+% ================= EDUCACIÓN =================
+\section*{Education}
+\entry{B.Sc. Electronic and Automation Engineering (Robotics \& Automation)}{2022 -- 2027 (exp.)}
+      {EINA, Universidad de Zaragoza, Spain}{IEEE SB UZ, Agenda 2030 Committee}
+\entry{B.Sc. Mechanical Engineering --- Exchange Year}{2026 -- 2027}
+      {Nanjing Tech University, China}{Scholarship (academic record)}
+\entry{Blended Intensive Program --- Global Value Chain in Bike Manufacturing}{Mar -- Apr 2026}
+      {Hochschule Esslingen, Germany}{}
+\entry{Mandarin Chinese (HSK 2)}{2025 -- 2026}{Confucius Institute, Zaragoza}{}
+\entry{English B2}{2021 -- 2022}{Escuela Oficial de Idiomas, Zaragoza}{}
+
+% ================= LOGROS =================
+\section*{Achievements \& Outreach}
+\begin{itemize}
+  \item \textbf{Winner} --- 1st Prize \textperiodcentered{} Best Performance Award \textperiodcentered{} JRG-26 at the 10th ASTI Robotics Challenge (ARC 2026).
+  \item Participant --- NASA Space Apps 2025, WED 2026 Hackathon.
+  \item Live robotics outreach stand at the XVII Engineering and Architecture Week (23--26 Mar 2026): adapted technical content (PID, odometry, wireless comms) for university students, schoolchildren and the public.
+\end{itemize}
+
+\end{document}

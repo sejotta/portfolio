@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Portfolio de Sergio Toro
