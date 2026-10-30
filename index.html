@@ -249,7 +249,7 @@
 
         <div class="stats reveal" aria-label="Datos rápidos">
           <div class="stat"><span class="stat__num"><span data-count="2">02</span></span><span class="stat__label">Proyectos actuales</span></div>
-          <div class="stat"><span class="stat__num"><span data-count="4">04</span></span><span class="stat__label">Proyectos de ingeniería</span></div>
+          <div class="stat"><span class="stat__num"><span data-count="7">07</span></span><span class="stat__label">Proyectos de ingeniería</span></div>
           <div class="stat"><span class="stat__num"><span data-count="3">03</span></span><span class="stat__label">Idiomas</span></div>
           <div class="stat"><span class="stat__num"><span data-count="2">02</span></span><span class="stat__label">Países</span></div>
         </div>
@@ -499,7 +499,7 @@
         </header>
 
         <div class="project-grid project-grid--previous">
-          <article class="project reveal" data-project="jrg25">
+          <article class="project reveal" data-project="jrg25" data-repo="https://github.com/Carlso16/JRG26">
           <div class="project__visual viz viz--amr" aria-hidden="true">
             <svg viewBox="0 0 800 520" preserveAspectRatio="xMidYMid slice">
               <defs>
@@ -589,28 +589,30 @@
           </div>
           <div class="project__body">
             <div class="project__meta mono"><span>01 / Robótica</span><span>2026</span></div>
-            <h3 class="project__title"><button class="project__open" type="button" aria-haspopup="dialog">JRG-25 · robot móvil autónomo</button></h3>
-            <p class="project__summary">Robot móvil autónomo para el ASTI Robotics Challenge (ARC 2026). Mecánica, PCB propia, firmware en C++ y control PID; finalista y premio EINA-Proyecta con el equipo Mesa Paso 43.</p>
+            <h3 class="project__title"><button class="project__open" type="button" aria-haspopup="dialog">JRG-25 → JRG-26 · robot móvil autónomo</button></h3>
+            <p class="project__summary">Robot móvil autónomo para el ASTI Robotics Challenge (ARC 2026). De JRG-25 a JRG-26: mecánica, PCB propia, firmware en C++ y control PID. Ganador del 1.er premio y del Best Performance Award con el equipo Mesa Paso 43.</p>
             <ul class="tags" aria-label="Tecnologías">
               <li>Robótica móvil</li><li>PCB</li><li>ESP32</li><li>PID</li>
             </ul>
+            <a class="project__link" href="https://github.com/Carlso16/JRG26" target="_blank" rel="noopener noreferrer">Proyecto JRG-25 → JRG-26 <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
             <span class="project__cta">Ver ficha <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
           </div>
           <div class="project__more" hidden>
             <dl class="project__facts">
               <div><dt>Rol</dt><dd>Diseño mecánico, electrónica y firmware · equipo Mesa Paso 43 (IEEE SB UZ)</dd></div>
-              <div><dt>Stack</dt><dd>SolidWorks / Fusion 360 · KiCad · ESP32 · C++ · PID · ESP-NOW</dd></div>
-              <div><dt>Estado</dt><dd>Finalista ARC 2026 · Premio EINA-Proyecta</dd></div>
+              <div><dt>Stack</dt><dd>SolidWorks / Fusion 360 · KiCad · ESP32 · C++ · PID · ESP-NOW · Python/Tkinter</dd></div>
+              <div><dt>Estado</dt><dd>JRG-25 finalista y premio EINA-Proyecta · JRG-26 ganador de ARC 2026</dd></div>
             </dl>
             <div class="prose">
-              <p><strong>JRG-25</strong> es un robot móvil autónomo desarrollado para el <em>ASTI Robotics Challenge (ARC 2026)</em> con el equipo Mesa Paso 43. Integra sensores ToF, IMU y encoders, odometría diferencial, control PID con anti-windup, máquinas de estado y una arquitectura de firmware por capas con CI.</p>
+              <p><strong>JRG-25 → JRG-26</strong> es la evolución del robot móvil autónomo presentado al <em>ASTI Robotics Challenge (ARC 2026)</em> con el equipo Mesa Paso 43. JRG-25 sentó las bases —sensores ToF, IMU y encoders, odometría diferencial, control PID con anti-windup, máquinas de estado y una arquitectura de firmware por capas con CI—; JRG-26 es la versión 2.0, con chasis propio de 4 ruedas, PCB propia y modos de line-following y sumo, que se llevó el 1.er premio y el Best Performance Award.</p>
               <ul>
                 <li>Diseño mecánico en SolidWorks/Fusion 360 e impresión 3D.</li>
                 <li>PCB propia en KiCad con multiplexado I²C y ESP32.</li>
                 <li>Control PID con anti-windup, odometría y FSM; ESP-NOW y Bluetooth.</li>
+                <li>JRG-26: chasis de 4 ruedas, sensores ToF400C por I²C y app de control en Python/Tkinter.</li>
               </ul>
             </div>
-            <p class="project__note">Finalista en ARC 2026 y ganador del premio EINA-Proyecta (categoría Electrónica y Automática).</p>
+            <p class="project__note">JRG-26 ganó el 1.er premio y el Best Performance Award en el ARC 2026; JRG-25 fue finalista y se llevó el premio EINA-Proyecta.</p>
           </div>
         </article>
 
@@ -899,6 +901,473 @@
                 </ul>
               </div>
               <p class="project__note">Proyecto personal de exploración entre diseño, web y 3D.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-project="lego" data-repo="https://github.com/sejotta/lego-autonomous-robot">
+            <div class="project__visual viz viz--lego" aria-hidden="true">
+              <svg viewBox="0 0 640 480" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <pattern id="lego-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+                    <path d="M32 0H0V32" fill="none" stroke="#F2EEE4" stroke-opacity=".05"/>
+                  </pattern>
+                  <radialGradient id="lego-glow" cx=".5" cy=".5" r=".5">
+                    <stop offset="0" stop-color="#FFA45C" stop-opacity=".14"/>
+                    <stop offset="1" stop-color="#FFA45C" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="lego-fov" x1="0" y1="1" x2="0" y2="0">
+                    <stop offset="0" stop-color="#FFA45C" stop-opacity=".2"/>
+                    <stop offset="1" stop-color="#FFA45C" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <rect width="640" height="480" fill="#0D0D0B"/>
+                <rect width="640" height="480" fill="url(#lego-grid)"/>
+                <circle cx="210" cy="260" r="190" fill="url(#lego-glow)"/>
+
+                <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#8E887A">
+                  <text x="30" y="42">ROBOTS AUTÓNOMOS / EINA</text>
+                  <text x="30" y="58" fill="#FFA45C">MISIÓN AUTÓNOMA · 4 FASES</text>
+                  <text x="610" y="42" text-anchor="end">LEGO MINDSTORMS · BRICKPI 3</text>
+                  <text x="610" y="58" text-anchor="end">PYTHON / OPENCV</text>
+                </g>
+
+                <!-- arena -->
+                <rect x="30" y="80" width="350" height="350" fill="#0B0B0A" fill-opacity=".55" stroke="#F2EEE4" stroke-opacity=".2"/>
+                <g stroke="#F2EEE4" stroke-opacity=".07">
+                  <path d="M80 80v350M130 80v350M180 80v350M230 80v350M280 80v350M330 80v350"/>
+                  <path d="M30 130h350M30 180h350M30 230h350M30 280h350M30 330h350M30 380h350"/>
+                </g>
+                <g stroke="#F2EEE4" stroke-opacity=".28" stroke-width="2" fill="none">
+                  <path d="M130 80v100"/>
+                  <path d="M230 140v90"/>
+                  <path d="M180 280h100"/>
+                  <path d="M280 230v100"/>
+                  <path d="M330 130h50"/>
+                  <path d="M30 330h50"/>
+                  <path d="M330 280h50"/>
+                  <path d="M180 380h50"/>
+                </g>
+
+                <!-- NF1 path -->
+                <path class="viz__path" d="M105 355V205H205V255" fill="none" stroke="#FFA45C" stroke-width="1.6" stroke-dasharray="5 7"/>
+                <g fill="#FFA45C">
+                  <circle cx="105" cy="355" r="3"/>
+                  <circle cx="205" cy="255" r="3"/>
+                </g>
+                <text x="116" y="196" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#FFA45C">NF1 · 4 CELDAS</text>
+
+                <!-- goal -->
+                <g transform="translate(205 255)">
+                  <rect x="-15" y="-15" width="30" height="30" fill="none" stroke="#FFA45C" stroke-width="1.4"/>
+                  <path d="M0-21v42M-21 0h42" stroke="#FFA45C" stroke-opacity=".45"/>
+                  <circle r="3.5" fill="#FFA45C"/>
+                </g>
+                <text x="205" y="292" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">META</text>
+
+                <!-- ball -->
+                <g transform="translate(300 340)">
+                  <circle r="11" fill="#FF7A45"/>
+                  <circle r="19" fill="none" stroke="#FF7A45" stroke-opacity=".35" stroke-dasharray="3 4"/>
+                  <path d="M-30 0h-12M19 0h12" stroke="#FF7A45" stroke-opacity=".35"/>
+                  <text x="0" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">HSV / BALL</text>
+                </g>
+
+                <!-- robot -->
+                <g transform="translate(105 355)">
+                  <path d="M0-24 L-40-104 L40-104Z" fill="url(#lego-fov)"/>
+                  <rect x="-24" y="-18" width="48" height="36" rx="7" fill="#171714" stroke="#F2EEE4" stroke-opacity=".6" stroke-width="1.5"/>
+                  <g fill="#1B1B17" stroke="#F2EEE4" stroke-opacity=".4">
+                    <rect x="-30" y="-14" width="8" height="28" rx="3"/>
+                    <rect x="22" y="-14" width="8" height="28" rx="3"/>
+                  </g>
+                  <g fill="#FFA45C" fill-opacity=".16" stroke="#FFA45C" stroke-opacity=".5">
+                    <circle cx="-12" cy="-6" r="3.2"/><circle cx="0" cy="-6" r="3.2"/><circle cx="12" cy="-6" r="3.2"/>
+                    <circle cx="-12" cy="6" r="3.2"/><circle cx="0" cy="6" r="3.2"/><circle cx="12" cy="6" r="3.2"/>
+                  </g>
+                  <rect x="-7" y="-25" width="14" height="8" rx="2" fill="#0B0B0A" stroke="#FFA45C" stroke-opacity=".7"/>
+                  <circle cx="0" cy="-21" r="2" fill="#FFA45C"/>
+                  <circle cx="0" cy="22" r="3" fill="none" stroke="#F2EEE4" stroke-opacity=".35"/>
+                </g>
+                <text x="105" y="398" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">START · (1,5)</text>
+
+                <!-- camera view -->
+                <g transform="translate(410 96)">
+                  <rect width="200" height="150" rx="4" fill="#11110F" stroke="#F2EEE4" stroke-opacity=".18"/>
+                  <text x="12" y="18" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">CAM / MARKER</text>
+                  <text x="188" y="18" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="8" fill="#FFA45C">ORB</text>
+                  <g transform="translate(100 82)">
+                    <circle r="38" fill="none" stroke="#F2EEE4" stroke-opacity=".14"/>
+                    <path d="M-46-30 44-38 48 30-40 36Z" fill="none" stroke="#FFA45C" stroke-width="1.2" stroke-dasharray="4 4" opacity=".8"/>
+                    <circle r="27" fill="#1B1B17" stroke="#FFA45C" stroke-opacity=".6"/>
+                    <path d="M-27-6h54M-20 10h40" stroke="#F2EEE4" stroke-opacity=".3"/>
+                    <circle cx="0" cy="-13" r="8" fill="#FFA45C" fill-opacity=".9"/>
+                    <circle cx="-13" cy="10" r="5" fill="none" stroke="#F2EEE4" stroke-opacity=".35"/>
+                    <g stroke="#FFA45C" stroke-width="1" opacity=".85">
+                      <path d="M-32-24v6M-35-21h6"/>
+                      <path d="M-14-30v6M-17-27h6"/>
+                      <path d="M10-28v6M7-25h6"/>
+                      <path d="M30-14v6M27-11h6"/>
+                      <path d="M-26 12v6M-29 15h6"/>
+                      <path d="M-4 22v6M-7 25h6"/>
+                      <path d="M20 16v6M17 19h6"/>
+                      <path d="M34 28v6M31 31h6"/>
+                    </g>
+                  </g>
+                  <text x="12" y="140" font-family="JetBrains Mono, monospace" font-size="7" letter-spacing="1" fill="#8E887A">R2-D2 / BB-8 · RANSAC</text>
+                </g>
+
+                <path d="M410 276h200" stroke="#F2EEE4" stroke-opacity=".12"/>
+                <g transform="translate(410 292)" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2">
+                  <text fill="#FFA45C">01 / SLALOM</text>
+                  <text y="18" fill="#8E887A">02 / NF1 MAZE</text>
+                  <text y="36" fill="#8E887A">03 / HSV BALL</text>
+                  <text y="54" fill="#8E887A">04 / ORB + RANSAC</text>
+                </g>
+
+                <g font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">
+                  <text x="30" y="458">SLALOM · LABERINTO · PELOTA · SALIDA</text>
+                  <text x="610" y="458" text-anchor="end" fill="#FFA45C">20 UNIT TESTS</text>
+                </g>
+                <g stroke="#FFA45C" stroke-width="1.3" fill="none" opacity=".7">
+                  <path d="M620 26h14v14M20 26H6v14M620 454h14v-14M20 454H6v-14"/>
+                </g>
+              </svg>
+            </div>
+            <div class="project__body">
+              <div class="project__meta mono"><span>05 / Robótica</span><span>2026</span></div>
+              <h3 class="project__title"><button class="project__open" type="button" aria-haspopup="dialog">LEGO · robot autónomo</button></h3>
+              <p class="project__summary">Robot diferencial con LEGO Mindstorms y BrickPi3 para la asignatura Robots Autónomos (EINA). Slalom, laberinto con NF1, pelota roja con visión HSV y salida por marcadores R2-D2/BB-8 con ORB y RANSAC.</p>
+              <ul class="tags"><li>Python</li><li>OpenCV</li><li>NF1</li><li>LEGO</li></ul>
+              <span class="project__cta">Ver ficha <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </div>
+            <div class="project__more" hidden>
+              <dl class="project__facts">
+                <div><dt>Rol</dt><dd>Percepción, planificación y control · Robots Autónomos (EINA)</dd></div>
+                <div><dt>Stack</dt><dd>Python · OpenCV · NumPy · BrickPi3 · LEGO EV3 · Raspberry Pi</dd></div>
+                <div><dt>Estado</dt><dd>Proyecto de asignatura · 20 tests unitarios</dd></div>
+              </dl>
+              <div class="prose">
+                <p><strong>LEGO Autonomous Robot</strong> es un robot móvil diferencial construido con LEGO Mindstorms y BrickPi3 para la asignatura <em>Robots Autónomos</em> de la EINA (Universidad de Zaragoza). Resuelve una misión autónoma en cuatro fases: un slalom cronometrado, un laberinto con planificación NF1 y replanificación, la búsqueda y agarre de una pelota roja mediante visión HSV, y la salida por el marcador asignado (R2-D2 o BB-8) con ORB y homografía RANSAC.</p>
+                <ul>
+                  <li>Planificador NF1 (wavefront + descenso de gradiente) con replanificación al detectar obstáculos.</li>
+                  <li>Odometría con encoders y giroscopio EV3; control por waypoints.</li>
+                  <li>Dos pipelines de visión: HSV para la pelota y ORB/RANSAC para los marcadores.</li>
+                  <li>20 tests unitarios y demo de planificación sin hardware.</li>
+                </ul>
+              </div>
+              <p class="project__note">Proyecto de la asignatura Robots Autónomos (EINA, Universidad de Zaragoza), desarrollado con Guillén Sainctavit.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-project="cnn" data-repo="https://github.com/sejotta/CNN_for_VisualRecognition">
+            <div class="project__visual viz viz--cnn" aria-hidden="true">
+              <svg viewBox="0 0 640 480" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <pattern id="cnn-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+                    <path d="M32 0H0V32" fill="none" stroke="#F2EEE4" stroke-opacity=".05"/>
+                  </pattern>
+                  <radialGradient id="cnn-glow" cx=".5" cy=".5" r=".5">
+                    <stop offset="0" stop-color="#FFA45C" stop-opacity=".14"/>
+                    <stop offset="1" stop-color="#FFA45C" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <rect width="640" height="480" fill="#0D0D0B"/>
+                <rect width="640" height="480" fill="url(#cnn-grid)"/>
+                <circle cx="190" cy="220" r="180" fill="url(#cnn-glow)"/>
+
+                <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#8E887A">
+                  <text x="30" y="42">COMPUTER VISION / CNN</text>
+                  <text x="30" y="58" fill="#FFA45C">LANDMARK CLASSIFICATION</text>
+                  <text x="610" y="42" text-anchor="end">PYTORCH + TIMM</text>
+                  <text x="610" y="58" text-anchor="end">6 CLASSES</text>
+                </g>
+
+                <!-- input image -->
+                <g>
+                  <rect x="30" y="86" width="210" height="244" rx="6" fill="#11110F" stroke="#F2EEE4" stroke-opacity=".18"/>
+                  <rect x="42" y="98" width="186" height="186" fill="#0B0B0A" stroke="#F2EEE4" stroke-opacity=".08"/>
+                  <g stroke="#F2EEE4" stroke-opacity=".04">
+                    <path d="M42 136h186M42 174h186M42 212h186M42 250h186"/>
+                    <path d="M80 98v186M118 98v186M156 98v186M194 98v186"/>
+                  </g>
+                  <text x="90" y="93" font-family="JetBrains Mono, monospace" font-size="7" letter-spacing="1" fill="#8E887A">LANDMARK</text>
+                  <text x="174" y="93" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="7" letter-spacing="1" fill="#FFA45C">01 / 06</text>
+                  <g fill="none" stroke="#F2EEE4" stroke-opacity=".8" stroke-width="1.4">
+                    <path d="M94 270C100 240 106 220 114 206L120 170 126 142 132 118 138 142 144 170 150 206C158 220 164 240 170 270"/>
+                    <path d="M108 224h52M116 196h36M122 168h20"/>
+                    <path d="M118 270v-28c0-12 6-20 14-20s14 8 14 20v28"/>
+                    <path d="M132 118v-10"/>
+                  </g>
+                  <rect x="90" y="104" width="88" height="172" fill="none" stroke="#FFA45C" stroke-width="1.2" stroke-dasharray="4 4" opacity=".8"/>
+                  <text x="42" y="302" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#FFA45C">EIFFEL_TOWER · 99.4%</text>
+                  <text x="42" y="318" font-family="JetBrains Mono, monospace" font-size="7" letter-spacing="1" fill="#8E887A">INPUT · RGB 224 × 224</text>
+                </g>
+
+                <!-- arrows -->
+                <g stroke="#FFA45C" stroke-opacity=".5" fill="none">
+                  <path d="M246 200h14"/><path d="M256 196l6 4-6 4"/>
+                  <path d="M382 200h30"/><path d="M406 196l6 4-6 4"/>
+                </g>
+
+                <!-- conv stack -->
+                <g transform="translate(268 148)">
+                  <rect x="24" y="24" width="84" height="120" rx="4" fill="#11110F" stroke="#F2EEE4" stroke-opacity=".12"/>
+                  <rect x="12" y="12" width="84" height="120" rx="4" fill="#11110F" stroke="#F2EEE4" stroke-opacity=".18"/>
+                  <rect x="0" y="0" width="84" height="120" rx="4" fill="#171714" stroke="#FFA45C" stroke-opacity=".45"/>
+                  <g stroke="#F2EEE4" stroke-opacity=".07">
+                    <path d="M21 0v120M42 0v120M63 0v120M0 24h84M0 48h84M0 72h84M0 96h84"/>
+                  </g>
+                  <g fill="#FFA45C" opacity=".55">
+                    <rect x="8" y="28" width="8" height="8"/>
+                    <rect x="30" y="52" width="8" height="8"/>
+                    <rect x="52" y="40" width="8" height="8"/>
+                    <rect x="16" y="76" width="8" height="8"/>
+                    <rect x="42" y="88" width="8" height="8"/>
+                    <rect x="62" y="64" width="8" height="8"/>
+                  </g>
+                  <text x="0" y="136" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">CONV / POOL</text>
+                </g>
+                <text x="268" y="306" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">1,280-D FEATURES</text>
+                <text x="246" y="218" font-family="JetBrains Mono, monospace" font-size="7" letter-spacing="1" fill="#8E887A">224²</text>
+
+                <!-- probabilities -->
+                <g>
+                  <rect x="420" y="86" width="190" height="244" rx="6" fill="#11110F" stroke="#F2EEE4" stroke-opacity=".18"/>
+                  <text x="432" y="106" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">SOFTMAX / TOP-6</text>
+                  <text x="598" y="106" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="8" fill="#FFA45C">%</text>
+                  <g font-family="JetBrains Mono, monospace" font-size="7" letter-spacing=".8">
+                    <text x="432" y="130" fill="#F2EEE4">EIFFEL</text>
+                    <rect x="500" y="124" width="80" height="7" fill="#FFA45C"/>
+                    <text x="598" y="130" text-anchor="end" fill="#FFA45C">99.4</text>
+
+                    <text x="432" y="156" fill="#8E887A">TOKYO</text>
+                    <rect x="500" y="150" width="6" height="7" fill="#FFA45C" fill-opacity=".35"/>
+                    <text x="598" y="156" text-anchor="end" fill="#8E887A">0.3</text>
+
+                    <text x="432" y="182" fill="#8E887A">GREAT WALL</text>
+                    <rect x="500" y="176" width="4" height="7" fill="#FFA45C" fill-opacity=".35"/>
+                    <text x="598" y="182" text-anchor="end" fill="#8E887A">0.1</text>
+
+                    <text x="432" y="208" fill="#8E887A">GOLDEN G.</text>
+                    <rect x="500" y="202" width="3" height="7" fill="#FFA45C" fill-opacity=".35"/>
+                    <text x="598" y="208" text-anchor="end" fill="#8E887A">0.1</text>
+
+                    <text x="432" y="234" fill="#8E887A">BROOKLYN</text>
+                    <rect x="500" y="228" width="2" height="7" fill="#FFA45C" fill-opacity=".35"/>
+                    <text x="598" y="234" text-anchor="end" fill="#8E887A">0.1</text>
+
+                    <text x="432" y="260" fill="#8E887A">SAGRADA</text>
+                    <rect x="500" y="254" width="2" height="7" fill="#FFA45C" fill-opacity=".35"/>
+                    <text x="598" y="260" text-anchor="end" fill="#8E887A">0.0</text>
+                  </g>
+                  <text x="432" y="300" font-family="JetBrains Mono, monospace" font-size="7" letter-spacing="1" fill="#8E887A">ONNX · CPU / PI 4</text>
+                  <text x="598" y="300" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="7" fill="#FFA45C">READY</text>
+                </g>
+
+                <g font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">
+                  <text x="30" y="458">3,040 TRAIN · 95 TEST · 224 × 224</text>
+                  <text x="610" y="458" text-anchor="end" fill="#FFA45C">94.7% TEST ACCURACY</text>
+                </g>
+                <g stroke="#FFA45C" stroke-width="1.3" fill="none" opacity=".7">
+                  <path d="M620 26h14v14M20 26H6v14M620 454h14v-14M20 454H6v-14"/>
+                </g>
+              </svg>
+            </div>
+            <div class="project__body">
+              <div class="project__meta mono"><span>06 / Visión por computador</span><span>2026</span></div>
+              <h3 class="project__title"><button class="project__open" type="button" aria-haspopup="dialog">CNN · reconocimiento de monumentos</button></h3>
+              <p class="project__summary">Clasificador de imágenes con PyTorch y timm que reconoce 6 monumentos del mundo. Fine-tuning en dos fases, comparativa MobileNetV3/EfficientNet-Lite0 y exportación ONNX para CPU o Raspberry Pi.</p>
+              <ul class="tags"><li>PyTorch</li><li>CNN</li><li>Transfer Learning</li><li>ONNX</li></ul>
+              <span class="project__cta">Ver ficha <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </div>
+            <div class="project__more" hidden>
+              <dl class="project__facts">
+                <div><dt>Rol</dt><dd>Visión por computador · Computer Vision (EINA)</dd></div>
+                <div><dt>Stack</dt><dd>Python · PyTorch · timm · ONNX Runtime · NumPy</dd></div>
+                <div><dt>Estado</dt><dd>Práctica P3 · 94,7 % en test (90/95)</dd></div>
+              </dl>
+              <div class="prose">
+                <p><strong>CNN for Visual Recognition</strong> es un clasificador de imágenes desarrollado como tercera práctica (P3) de la asignatura <em>Computer Vision</em> de la EINA (Universidad de Zaragoza). Reconoce seis monumentos —Brooklyn Bridge, Eiffel Tower, Golden Gate, Great Wall, Sagrada Família y Tokyo Tower— a partir de una sola foto y devuelve la etiqueta con su confianza.</p>
+                <ul>
+                  <li>Fine-tuning en dos fases: cabeza con el backbone congelado y ajuste de las dos últimas etapas con un learning rate menor.</li>
+                  <li>Comparativa de MobileNetV3-Large y EfficientNet-Lite0 con el mismo pipeline; 90/95 aciertos (94,7 %) y 93,9 % de recall macro en un test de estilo Instagram.</li>
+                  <li>Preprocesado específico del modelo, BatchNorm congelada, split estratificado y selección del mejor checkpoint.</li>
+                  <li>Exportación a ONNX con metadatos de clases y normalización para inferencia en CPU o Raspberry Pi 4.</li>
+                </ul>
+              </div>
+              <p class="project__note">El dataset y los pesos no se distribuyen en el repositorio. Resultados respaldados por las matrices de confusión conservadas: ~93–95 % según la variación del test de 95 imágenes.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-project="vslam" data-repo="https://github.com/sejotta/vSLAM-fundamentals">
+            <div class="project__visual viz viz--vslam" aria-hidden="true">
+              <svg viewBox="0 0 640 480" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <pattern id="vslam-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+                    <path d="M32 0H0V32" fill="none" stroke="#F2EEE4" stroke-opacity=".05"/>
+                  </pattern>
+                  <radialGradient id="vslam-glow" cx=".5" cy=".5" r=".5">
+                    <stop offset="0" stop-color="#FFA45C" stop-opacity=".12"/>
+                    <stop offset="1" stop-color="#FFA45C" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <rect width="640" height="480" fill="#0D0D0B"/>
+                <rect width="640" height="480" fill="url(#vslam-grid)"/>
+                <circle cx="380" cy="280" r="190" fill="url(#vslam-glow)"/>
+
+                <g font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#8E887A">
+                  <text x="30" y="42">COMPUTER VISION / vSLAM</text>
+                  <text x="30" y="58" fill="#FFA45C">INCREMENTAL 3D RECONSTRUCTION</text>
+                  <text x="610" y="42" text-anchor="end">SIFT + RANSAC</text>
+                  <text x="610" y="58" text-anchor="end">MONOCULAR</text>
+                </g>
+
+                <!-- feature matching -->
+                <g transform="translate(30 82)">
+                  <rect width="250" height="122" rx="5" fill="#11110F" stroke="#F2EEE4" stroke-opacity=".18"/>
+                  <text x="10" y="17" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">FEATURE MATCHING</text>
+                  <text x="240" y="17" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="8" fill="#FFA45C">RANSAC</text>
+                  <rect x="10" y="28" width="100" height="72" fill="#0B0B0A" stroke="#F2EEE4" stroke-opacity=".12"/>
+                  <rect x="140" y="28" width="100" height="72" fill="#0B0B0A" stroke="#F2EEE4" stroke-opacity=".12"/>
+                  <g stroke="#F2EEE4" stroke-opacity=".06">
+                    <path d="M10 52h100M10 76h100M10 92h100"/>
+                    <path d="M140 52h100M140 76h100M140 92h100"/>
+                  </g>
+                  <g stroke="#FFA45C" stroke-opacity=".3">
+                    <path d="M30 46 160 50"/><path d="M52 62 182 66"/><path d="M74 40 204 44"/><path d="M92 78 222 82"/><path d="M44 86 174 90"/>
+                  </g>
+                  <g fill="#FFA45C">
+                    <circle cx="30" cy="46" r="1.6"/><circle cx="52" cy="62" r="1.6"/><circle cx="74" cy="40" r="1.6"/><circle cx="92" cy="78" r="1.6"/><circle cx="44" cy="86" r="1.6"/>
+                    <circle cx="160" cy="50" r="1.6"/><circle cx="182" cy="66" r="1.6"/><circle cx="204" cy="44" r="1.6"/><circle cx="222" cy="82" r="1.6"/><circle cx="174" cy="90" r="1.6"/>
+                  </g>
+                  <text x="10" y="114" font-family="JetBrains Mono, monospace" font-size="7" letter-spacing="1" fill="#8E887A">KEYFRAME 1</text>
+                  <text x="140" y="114" font-family="JetBrains Mono, monospace" font-size="7" letter-spacing="1" fill="#8E887A">KEYFRAME 2</text>
+                  <text x="240" y="114" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="7" fill="#FFA45C">INLIERS</text>
+                </g>
+
+                <text x="30" y="224" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">MAP + TRAJECTORY</text>
+
+                <!-- bookshelf wireframe -->
+                <g fill="none" stroke="#F2EEE4" stroke-opacity=".28">
+                  <path d="M300 230h180v140H300Z"/>
+                  <path d="M300 230l50-30h180l-50 30"/>
+                  <path d="M480 230l50-30v140l-50 30"/>
+                  <path d="M300 370l50-30"/>
+                  <path d="M300 277h180M300 324h180"/>
+                  <path d="M480 277l50-30M480 324l50-30"/>
+                  <path d="M390 230v140"/>
+                </g>
+                <g fill="#1B1B17" stroke="#F2EEE4" stroke-opacity=".18">
+                  <rect x="310" y="250" width="8" height="27"/>
+                  <rect x="320" y="244" width="7" height="33"/>
+                  <rect x="329" y="254" width="9" height="23"/>
+                  <rect x="340" y="248" width="6" height="29"/>
+                  <rect x="348" y="256" width="8" height="21"/>
+                  <rect x="360" y="246" width="7" height="31"/>
+                  <rect x="395" y="252" width="8" height="25"/>
+                  <rect x="405" y="246" width="6" height="31"/>
+                  <rect x="413" y="256" width="9" height="21"/>
+                  <rect x="424" y="250" width="7" height="27"/>
+                  <rect x="433" y="244" width="8" height="33"/>
+                  <rect x="443" y="254" width="6" height="23"/>
+                  <rect x="451" y="248" width="9" height="29"/>
+                  <rect x="462" y="256" width="7" height="21"/>
+                  <rect x="310" y="297" width="7" height="27"/>
+                  <rect x="319" y="291" width="9" height="33"/>
+                  <rect x="330" y="301" width="6" height="23"/>
+                  <rect x="338" y="295" width="8" height="29"/>
+                  <rect x="348" y="303" width="7" height="21"/>
+                  <rect x="357" y="293" width="9" height="31"/>
+                  <rect x="400" y="299" width="8" height="25"/>
+                  <rect x="410" y="293" width="6" height="31"/>
+                  <rect x="418" y="303" width="9" height="21"/>
+                  <rect x="429" y="297" width="7" height="27"/>
+                  <rect x="438" y="291" width="8" height="33"/>
+                  <rect x="448" y="301" width="6" height="23"/>
+                  <rect x="456" y="295" width="9" height="29"/>
+                  <rect x="467" y="303" width="7" height="21"/>
+                </g>
+
+                <!-- point cloud -->
+                <g fill="#FFA45C">
+                  <circle cx="305" cy="240" r="1.5" opacity=".7"/><circle cx="315" cy="255" r="1.2" opacity=".5"/>
+                  <circle cx="325" cy="268" r="1.8" opacity=".9"/><circle cx="340" cy="245" r="1.3" opacity=".6"/>
+                  <circle cx="355" cy="262" r="1.6" opacity=".8"/><circle cx="370" cy="250" r="1.1" opacity=".5"/>
+                  <circle cx="385" cy="270" r="1.7" opacity=".85"/><circle cx="400" cy="245" r="1.4" opacity=".65"/>
+                  <circle cx="415" cy="260" r="1.9" opacity=".9"/><circle cx="430" cy="248" r="1.2" opacity=".55"/>
+                  <circle cx="445" cy="265" r="1.5" opacity=".75"/><circle cx="460" cy="252" r="1.3" opacity=".6"/>
+                  <circle cx="475" cy="268" r="1.7" opacity=".8"/><circle cx="310" cy="300" r="1.4" opacity=".6"/>
+                  <circle cx="325" cy="315" r="1.8" opacity=".9"/><circle cx="345" cy="298" r="1.2" opacity=".5"/>
+                  <circle cx="360" cy="318" r="1.6" opacity=".8"/><circle cx="380" cy="302" r="1.3" opacity=".6"/>
+                  <circle cx="395" cy="320" r="1.9" opacity=".9"/><circle cx="410" cy="300" r="1.5" opacity=".7"/>
+                  <circle cx="425" cy="315" r="1.2" opacity=".5"/><circle cx="440" cy="305" r="1.7" opacity=".8"/>
+                  <circle cx="455" cy="318" r="1.4" opacity=".6"/><circle cx="470" cy="302" r="1.8" opacity=".85"/>
+                  <circle cx="335" cy="340" r="1.5" opacity=".7"/><circle cx="365" cy="350" r="1.2" opacity=".5"/>
+                  <circle cx="395" cy="345" r="1.7" opacity=".8"/><circle cx="425" cy="355" r="1.3" opacity=".6"/>
+                  <circle cx="455" cy="342" r="1.6" opacity=".75"/><circle cx="480" cy="350" r="1.4" opacity=".65"/>
+                  <circle cx="490" cy="250" r="1.2" opacity=".5"/><circle cx="505" cy="265" r="1.6" opacity=".75"/>
+                  <circle cx="520" cy="240" r="1.3" opacity=".6"/><circle cx="510" cy="300" r="1.5" opacity=".7"/>
+                  <circle cx="525" cy="315" r="1.2" opacity=".5"/>
+                </g>
+
+                <!-- trajectory -->
+                <path d="M80 415 180 405 280 395 380 385 470 375" fill="none" stroke="#FF7A45" stroke-width="1.6"/>
+                <g fill="#FF7A45">
+                  <circle cx="80" cy="415" r="2.5"/><circle cx="180" cy="405" r="2.2"/>
+                  <circle cx="280" cy="395" r="2.2"/><circle cx="380" cy="385" r="2.2"/>
+                  <circle cx="470" cy="375" r="2.5"/>
+                </g>
+                <g fill="#0D0D0B" stroke="#FF7A45" stroke-width="1.2" opacity=".9">
+                  <g transform="translate(80 415) rotate(-25)"><path d="M0 0L-14-7 14 7Z"/></g>
+                  <g transform="translate(180 405) rotate(-20)"><path d="M0 0L-12-6 12 6Z"/></g>
+                  <g transform="translate(280 395) rotate(-18)"><path d="M0 0L-12-6 12 6Z"/></g>
+                  <g transform="translate(380 385) rotate(-15)"><path d="M0 0L-12-6 12 6Z"/></g>
+                  <g transform="translate(470 375) rotate(-12)"><path d="M0 0L-14-7 14 7Z"/></g>
+                </g>
+                <text x="90" y="438" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">PnP TRAJECTORY</text>
+
+                <!-- axis -->
+                <g stroke="#FFA45C" stroke-opacity=".55" fill="none">
+                  <path d="M60 365h24M60 365V345M60 365 48 375"/>
+                  <path d="M81 361l4 4-4 4M56 348l4-4 4 4M51 372l-3 3 3 3"/>
+                </g>
+                <g font-family="JetBrains Mono, monospace" font-size="6" fill="#8E887A">
+                  <text x="88" y="367">X</text><text x="56" y="340">Y</text><text x="38" y="380">Z</text>
+                </g>
+
+                <text x="610" y="214" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#FFA45C">1,600 POINTS</text>
+                <g font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#8E887A">
+                  <text x="30" y="458">5 KEYFRAMES · 1,600 POINTS</text>
+                  <text x="610" y="458" text-anchor="end" fill="#FFA45C">0.38 PX RMS · 1.8 S CPU</text>
+                </g>
+                <g stroke="#FFA45C" stroke-width="1.3" fill="none" opacity=".7">
+                  <path d="M620 26h14v14M20 26H6v14M620 454h14v-14M20 454H6v-14"/>
+                </g>
+              </svg>
+            </div>
+            <div class="project__body">
+              <div class="project__meta mono"><span>07 / Visión por computador</span><span>2026</span></div>
+              <h3 class="project__title"><button class="project__open" type="button" aria-haspopup="dialog">vSLAM · reconstrucción 3D y PnP</button></h3>
+              <p class="project__summary">Pipeline de reconstrucción visual incremental en Python y OpenCV: SIFT + RANSAC, geometría epipolar, triangulación y localización de cada keyframe con PnP. Reconstruye una estantería real con 1.600 puntos y 0,38 px de error de reproyección.</p>
+              <ul class="tags"><li>vSLAM</li><li>OpenCV</li><li>PnP</li><li>3D</li></ul>
+              <span class="project__cta">Ver ficha <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </div>
+            <div class="project__more" hidden>
+              <dl class="project__facts">
+                <div><dt>Rol</dt><dd>Visión por computador · reconstrucción y localización</dd></div>
+                <div><dt>Stack</dt><dd>Python · OpenCV · NumPy · SIFT · RANSAC · PnP</dd></div>
+                <div><dt>Estado</dt><dd>Demo real · 1.600 puntos 3D</dd></div>
+              </dl>
+              <div class="prose">
+                <p><strong>vSLAM Fundamentals</strong> es una implementación compacta de un pipeline de reconstrucción visual incremental. A partir de una secuencia de imágenes calibradas, construye un mapa 3D disperso y estima la pose de cada nuevo keyframe con PnP contra el mapa ya reconstruido. Incluye geometría de dos vistas, triangulación, homografía, selección de keyframes por flujo óptico y un refinamiento opcional con bundle adjustment.</p>
+                <ul>
+                  <li>Detección y matching SIFT con ratio test; matriz fundamental y esencial con RANSAC.</li>
+                  <li>Bucle incremental: PnP contra el mapa, triangulación de nuevos puntos y actualización del mapa.</li>
+                  <li>Demo real de estantería: 5 keyframes, 1.600 puntos, 0,38 px RMS y ~1,8 s en CPU.</li>
+                  <li>Test sintético determinista: ATE 0,0096, RPE de rotación 0,058° y 0,29 px RMS; 5 tests de geometría.</li>
+                </ul>
+              </div>
+              <p class="project__note">Implementación compacta, no un SLAM de producción: sin loop closure, relocalización, fusión de sensores ni mapping denso. El mapa monocular tiene escala arbitraria.</p>
             </div>
           </article>
         </div>

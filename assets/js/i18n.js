@@ -9,11 +9,12 @@ const STORAGE_KEY = 'st-lang';
 const ico = (name) => `<svg class="icon" aria-hidden="true"><use href="#i-${name}"></use></svg>`;
 const cta = (label) => `${label} ${ico('arrow-up-right')}`;
 
-const projectBody = ({ no, tag, year, title, summary, tags, label, tagsLabel = 'Technologies' }) => `
+const projectBody = ({ no, tag, year, title, summary, tags, label, tagsLabel = 'Technologies', projectHref, projectLabel }) => `
 <div class="project__meta mono"><span>${no}${tag ? ` / ${tag}` : ''}</span><span>${year}</span></div>
 <h3 class="project__title"><button class="project__open" type="button" aria-haspopup="dialog">${title}</button></h3>
 <p class="project__summary">${summary}</p>
 <ul class="tags" aria-label="${tagsLabel}">${tags.map((t) => `<li>${t}</li>`).join('')}</ul>
+${projectHref ? `<a class="project__link" href="${projectHref}" target="_blank" rel="noopener noreferrer">${projectLabel} ${ico('arrow-up-right')}</a>` : ''}
 <span class="project__cta">${cta(label)}</span>`;
 
 const timelineItem = (year, tag, title, text) => `
@@ -198,25 +199,27 @@ const translations = {
       '.work .section-title': 'My most technical<br><em>projects.</em>',
       '[data-project="jrg25"] .project__body': projectBody({
         no: '01', tag: 'Robotics', year: '2026', label: 'View project',
-        title: 'JRG-25 · autonomous mobile robot',
-        summary: 'Autonomous mobile robot for the ASTI Robotics Challenge (ARC 2026). Mechanics, custom PCB, C++ firmware and PID control; finalist and EINA-Proyecta award with Team Mesa Paso 43.',
+        title: 'JRG-25 → JRG-26 · autonomous mobile robot',
+        summary: 'Autonomous mobile robot for the ASTI Robotics Challenge (ARC 2026). From JRG-25 to JRG-26: mechanics, custom PCB, C++ firmware and PID control. Winner of 1st Prize and the Best Performance Award with Team Mesa Paso 43.',
         tags: ['Mobile robotics', 'PCB', 'ESP32', 'PID'],
+        projectHref: 'https://github.com/Carlso16/JRG26', projectLabel: 'JRG-25 → JRG-26 project',
       }),
       '[data-project="jrg25"] .project__more': `
         <dl class="project__facts">
           <div><dt>Role</dt><dd>Mechanical design, electronics and firmware · Team Mesa Paso 43 (IEEE SB UZ)</dd></div>
-          <div><dt>Stack</dt><dd>SolidWorks / Fusion 360 · KiCad · ESP32 · C++ · PID · ESP-NOW</dd></div>
-          <div><dt>Status</dt><dd>ARC 2026 finalist · EINA-Proyecta award</dd></div>
+          <div><dt>Stack</dt><dd>SolidWorks / Fusion 360 · KiCad · ESP32 · C++ · PID · ESP-NOW · Python/Tkinter</dd></div>
+          <div><dt>Status</dt><dd>JRG-25 finalist &amp; EINA-Proyecta award · JRG-26 ARC 2026 winner</dd></div>
         </dl>
         <div class="prose">
-          <p><strong>JRG-25</strong> is an autonomous mobile robot built for the <em>ASTI Robotics Challenge (ARC 2026)</em> with Team Mesa Paso 43. It integrates ToF sensors, an IMU and encoders, differential odometry, PID control with anti-windup, state machines and a layered firmware architecture with CI.</p>
+          <p><strong>JRG-25 → JRG-26</strong> is the evolution of the autonomous mobile robot entered in the <em>ASTI Robotics Challenge (ARC 2026)</em> with Team Mesa Paso 43. JRG-25 laid the foundations — ToF sensors, an IMU and encoders, differential odometry, PID control with anti-windup, state machines and a layered firmware architecture with CI — while JRG-26 is the 2.0 version: a custom 4-wheel chassis, its own PCB and line-following and sumo modes, which took 1st Prize and the Best Performance Award.</p>
           <ul>
             <li>Mechanical design in SolidWorks/Fusion 360 and 3D printing.</li>
             <li>Custom KiCad PCB with I²C multiplexing and ESP32.</li>
             <li>PID control with anti-windup, odometry and FSM; ESP-NOW and Bluetooth.</li>
+            <li>JRG-26: 4-wheel chassis, TOF400C sensors over I²C and a Python/Tkinter control app.</li>
           </ul>
         </div>
-        <p class="project__note">ARC 2026 finalist and winner of the EINA-Proyecta award (Electronics &amp; Automation category).</p>`,
+        <p class="project__note">JRG-26 won 1st Prize and the Best Performance Award at ARC 2026; JRG-25 was a finalist and won the EINA-Proyecta award.</p>`,
       '[data-project="agroplant"] .project__body': projectBody({
         no: '02', year: '2025', label: 'View project',
         title: 'AGROPLANT',
@@ -280,6 +283,72 @@ const translations = {
           </ul>
         </div>
         <p class="project__note">A personal exploration between design, web and 3D.</p>`,
+      '[data-project="lego"] .project__body': projectBody({
+        no: '05', tag: 'Robotics', year: '2026', label: 'View project',
+        title: 'LEGO · autonomous robot',
+        summary: 'Differential-drive robot built with LEGO Mindstorms and BrickPi3 for the Autonomous Robots course (EINA). Slalom, NF1 maze planning, red-ball tracking with HSV vision and an ORB/RANSAC exit through the R2-D2/BB-8 markers.',
+        tags: ['Python', 'OpenCV', 'NF1', 'LEGO'],
+      }),
+      '[data-project="lego"] .project__more': `
+        <dl class="project__facts">
+          <div><dt>Role</dt><dd>Perception, planning and control · Autonomous Robots (EINA)</dd></div>
+          <div><dt>Stack</dt><dd>Python · OpenCV · NumPy · BrickPi3 · LEGO EV3 · Raspberry Pi</dd></div>
+          <div><dt>Status</dt><dd>Course project · 20 unit tests</dd></div>
+        </dl>
+        <div class="prose">
+          <p><strong>LEGO Autonomous Robot</strong> is a differential-drive robot built with LEGO Mindstorms and BrickPi3 for the <em>Autonomous Robots</em> course at EINA (University of Zaragoza). It completes a four-phase autonomous mission: a timed slalom, a maze with NF1 planning and replanning, the search for and grasp of a red ball using HSV vision, and the exit through its assigned marker (R2-D2 or BB-8) with ORB and RANSAC homography.</p>
+          <ul>
+            <li>NF1 planner (wavefront + gradient descent) with replanning when an obstacle is detected.</li>
+            <li>Encoder and EV3 gyro odometry; waypoint control.</li>
+            <li>Two vision pipelines: HSV for the ball and ORB/RANSAC for the markers.</li>
+            <li>20 unit tests and a planning demo that runs without hardware.</li>
+          </ul>
+        </div>
+        <p class="project__note">Course project for Autonomous Robots (EINA, University of Zaragoza), developed with Guillén Sainctavit.</p>`,
+      '[data-project="cnn"] .project__body': projectBody({
+        no: '06', tag: 'Computer vision', year: '2026', label: 'View project',
+        title: 'CNN · landmark recognition',
+        summary: 'Image classifier built with PyTorch and timm that recognises 6 world landmarks. Two-phase fine-tuning, MobileNetV3 vs EfficientNet-Lite0 comparison and ONNX export for CPU or Raspberry Pi.',
+        tags: ['PyTorch', 'CNN', 'Transfer Learning', 'ONNX'],
+      }),
+      '[data-project="cnn"] .project__more': `
+        <dl class="project__facts">
+          <div><dt>Role</dt><dd>Computer vision · Computer Vision (EINA)</dd></div>
+          <div><dt>Stack</dt><dd>Python · PyTorch · timm · ONNX Runtime · NumPy</dd></div>
+          <div><dt>Status</dt><dd>P3 assignment · 94.7% test (90/95)</dd></div>
+        </dl>
+        <div class="prose">
+          <p><strong>CNN for Visual Recognition</strong> is an image classifier developed as the third practical assignment (P3) of the <em>Computer Vision</em> course at EINA (University of Zaragoza). It recognises six landmarks — Brooklyn Bridge, Eiffel Tower, Golden Gate, Great Wall, Sagrada Família and Tokyo Tower — from a single photo and returns the label with its confidence.</p>
+          <ul>
+            <li>Two-phase fine-tuning: a head on a frozen backbone, then the last two stages at a lower learning rate.</li>
+            <li>MobileNetV3-Large vs EfficientNet-Lite0 with the same pipeline; 90/95 correct (94.7%) and 93.9% macro recall on an Instagram-style test set.</li>
+            <li>Model-specific preprocessing, frozen BatchNorm, stratified split and best-checkpoint selection.</li>
+            <li>ONNX export with class and normalisation metadata for CPU or Raspberry Pi 4 inference.</li>
+          </ul>
+        </div>
+        <p class="project__note">The dataset and weights are not distributed in the repository. Results are backed by the preserved confusion matrices: roughly 93–95% given the variance of a 95-image test set.</p>`,
+      '[data-project="vslam"] .project__body': projectBody({
+        no: '07', tag: 'Computer vision', year: '2026', label: 'View project',
+        title: 'vSLAM · 3D reconstruction and PnP',
+        summary: 'Incremental visual reconstruction pipeline in Python and OpenCV: SIFT + RANSAC, epipolar geometry, triangulation and per-keyframe localisation with PnP. Reconstructs a real bookshelf with 1,600 points and 0.38 px reprojection error.',
+        tags: ['vSLAM', 'OpenCV', 'PnP', '3D'],
+      }),
+      '[data-project="vslam"] .project__more': `
+        <dl class="project__facts">
+          <div><dt>Role</dt><dd>Computer vision · reconstruction and localisation</dd></div>
+          <div><dt>Stack</dt><dd>Python · OpenCV · NumPy · SIFT · RANSAC · PnP</dd></div>
+          <div><dt>Status</dt><dd>Real demo · 1,600 3D points</dd></div>
+        </dl>
+        <div class="prose">
+          <p><strong>vSLAM Fundamentals</strong> is a compact implementation of an incremental visual reconstruction pipeline. From a calibrated image sequence it builds a sparse 3D map and estimates the pose of every new keyframe with PnP against the map already reconstructed. The project includes two-view geometry, triangulation, homography, optical-flow keyframe selection and optional bundle-adjustment refinement.</p>
+          <ul>
+            <li>SIFT detection and matching with ratio test; fundamental and essential matrices with RANSAC.</li>
+            <li>Incremental loop: PnP against the map, triangulation of new points and map update.</li>
+            <li>Real bookshelf demo: 5 keyframes, 1,600 points, 0.38 px RMS and ~1.8 s on CPU.</li>
+            <li>Deterministic synthetic test: ATE 0.0096, rotation RPE 0.058° and 0.29 px RMS; 5 geometry tests.</li>
+          </ul>
+        </div>
+        <p class="project__note">A compact implementation, not production SLAM: no loop closure, relocalisation, sensor fusion or dense mapping. The monocular map has arbitrary scale.</p>`,
 
       '.capabilities .label': '<span class="label__num">04</span> Capabilities',
       '.capabilities .section-title': 'Business, people<br>and technical <em>depth.</em>',
@@ -496,25 +565,27 @@ const translations = {
       '.work .section-title': '我最具技术性的<br><em>项目。</em>',
       '[data-project="jrg25"] .project__body': projectBody({
         no: '01', tag: '机器人', year: '2026', label: '查看项目',
-        title: 'JRG-25 · 自主移动机器人',
-        summary: '为 ASTI 机器人挑战赛（ARC 2026）打造的自主移动机器人。机械、自制 PCB、C++ 固件和 PID 控制；与 Mesa Paso 43 队一起进入决赛，并获得 EINA-Proyecta 奖。',
+        title: 'JRG-25 → JRG-26 · 自主移动机器人',
+        summary: '为 ASTI 机器人挑战赛（ARC 2026）打造的自主移动机器人。从 JRG-25 到 JRG-26：机械、自制 PCB、C++ 固件与 PID 控制。与 Mesa Paso 43 队一起获得一等奖和最佳表现奖。',
         tags: ['移动机器人', 'PCB', 'ESP32', 'PID'],
+        projectHref: 'https://github.com/Carlso16/JRG26', projectLabel: 'JRG-25 → JRG-26 项目',
       }),
       '[data-project="jrg25"] .project__more': `
         <dl class="project__facts">
           <div><dt>角色</dt><dd>机械设计、电子与固件 · Mesa Paso 43 队（IEEE SB UZ）</dd></div>
-          <div><dt>技术栈</dt><dd>SolidWorks / Fusion 360 · KiCad · ESP32 · C++ · PID · ESP-NOW</dd></div>
-          <div><dt>状态</dt><dd>ARC 2026 决赛入围 · EINA-Proyecta 奖</dd></div>
+          <div><dt>技术栈</dt><dd>SolidWorks / Fusion 360 · KiCad · ESP32 · C++ · PID · ESP-NOW · Python/Tkinter</dd></div>
+          <div><dt>状态</dt><dd>JRG-25 决赛入围及 EINA-Proyecta 奖 · JRG-26 ARC 2026 冠军</dd></div>
         </dl>
         <div class="prose">
-          <p><strong>JRG-25</strong> 是为 <em>ASTI 机器人挑战赛（ARC 2026）</em>与 Mesa Paso 43 队一起开发的自主移动机器人。它集成了 ToF、IMU 和编码器，使用差速里程计、带抗饱和的 PID 控制、状态机，以及带 CI 的分层固件架构。</p>
+          <p><strong>JRG-25 → JRG-26</strong> 是与 Mesa Paso 43 队一起参加 <em>ASTI 机器人挑战赛（ARC 2026）</em>的自主移动机器人的进化版。JRG-25 打下基础——ToF 传感器、IMU 与编码器、差速里程计、带抗饱和的 PID 控制、状态机，以及带 CI 的分层固件架构；JRG-26 是 2.0 版本，采用自制四轮底盘、自制 PCB，支持循迹与相扑模式，并获得一等奖和最佳表现奖。</p>
           <ul>
             <li>SolidWorks/Fusion 360 机械设计与 3D 打印。</li>
             <li>KiCad 自制 PCB，包含 I²C 多路复用与 ESP32。</li>
             <li>带抗饱和的 PID、里程计和 FSM；ESP-NOW 与蓝牙。</li>
+            <li>JRG-26：四轮底盘、I²C 接口的 TOF400C 传感器，以及 Python/Tkinter 控制应用。</li>
           </ul>
         </div>
-        <p class="project__note">ARC 2026 决赛入围，EINA-Proyecta 奖（电子与自动化组）得主。</p>`,
+        <p class="project__note">JRG-26 在 ARC 2026 获得一等奖和最佳表现奖；JRG-25 入围决赛并获得 EINA-Proyecta 奖。</p>`,
       '[data-project="agroplant"] .project__body': projectBody({
         no: '02', year: '2025', label: '查看项目',
         title: 'AGROPLANT',
@@ -578,6 +649,72 @@ const translations = {
           </ul>
         </div>
         <p class="project__note">设计、网页与 3D 之间的个人探索。</p>`,
+      '[data-project="lego"] .project__body': projectBody({
+        no: '05', tag: '机器人', year: '2026', label: '查看项目',
+        title: 'LEGO · 自主机器人',
+        summary: '为 EINA 自主机器人课程打造的 LEGO Mindstorms + BrickPi3 差速机器人。完成绕桩、NF1 迷宫规划、HSV 视觉红球追踪，以及 ORB/RANSAC 识别 R2-D2/BB-8 标记后离场。',
+        tags: ['Python', 'OpenCV', 'NF1', 'LEGO'],
+      }),
+      '[data-project="lego"] .project__more': `
+        <dl class="project__facts">
+          <div><dt>角色</dt><dd>感知、规划与控制 · 自主机器人课程（EINA）</dd></div>
+          <div><dt>技术栈</dt><dd>Python · OpenCV · NumPy · BrickPi3 · LEGO EV3 · Raspberry Pi</dd></div>
+          <div><dt>状态</dt><dd>课程项目 · 20 个单元测试</dd></div>
+        </dl>
+        <div class="prose">
+          <p><strong>LEGO Autonomous Robot</strong> 是为萨拉戈萨大学 EINA 自主机器人课程打造的 LEGO Mindstorms + BrickPi3 差速移动机器人。它在一次任务中完成四个阶段：计时绕桩、使用 NF1 规划并重新规划的迷宫、基于 HSV 视觉的红球搜索与抓取，以及通过 ORB 与 RANSAC 单应性识别 R2-D2/BB-8 标记后离场。</p>
+          <ul>
+            <li>NF1 规划器（波前 + 梯度下降），检测到障碍物时重新规划。</li>
+            <li>编码器与 EV3 陀螺仪里程计；航点控制。</li>
+            <li>两条视觉流水线：HSV 红球检测与 ORB/RANSAC 标记识别。</li>
+            <li>20 个单元测试，以及无需硬件的规划演示。</li>
+          </ul>
+        </div>
+        <p class="project__note">萨拉戈萨大学 EINA 自主机器人课程项目，与 Guillén Sainctavit 共同开发。</p>`,
+      '[data-project="cnn"] .project__body': projectBody({
+        no: '06', tag: '计算机视觉', year: '2026', label: '查看项目',
+        title: 'CNN · 地标识别',
+        summary: '使用 PyTorch 与 timm 构建的图像分类器，可识别 6 个世界地标。两阶段微调、MobileNetV3 与 EfficientNet-Lite0 对比，并导出 ONNX 供 CPU 或树莓派推理。',
+        tags: ['PyTorch', 'CNN', '迁移学习', 'ONNX'],
+      }),
+      '[data-project="cnn"] .project__more': `
+        <dl class="project__facts">
+          <div><dt>角色</dt><dd>计算机视觉 · Computer Vision（EINA）</dd></div>
+          <div><dt>技术栈</dt><dd>Python · PyTorch · timm · ONNX Runtime · NumPy</dd></div>
+          <div><dt>状态</dt><dd>P3 课程作业 · 测试 94.7%（90/95）</dd></div>
+        </dl>
+        <div class="prose">
+          <p><strong>CNN for Visual Recognition</strong> 是为萨拉戈萨大学 EINA <em>Computer Vision</em> 课程第三次实践（P3）开发的图像分类器。它可以从单张照片识别六个地标——布鲁克林大桥、埃菲尔铁塔、金门大桥、长城、圣家堂和东京塔——并返回标签与置信度。</p>
+          <ul>
+            <li>两阶段微调：先冻结骨干网络训练分类头，再以更低学习率微调最后两个阶段。</li>
+            <li>MobileNetV3-Large 与 EfficientNet-Lite0 使用同一流程对比；在 Instagram 风格测试集上 90/95 正确（94.7%），宏平均召回率 93.9%。</li>
+            <li>模型专属预处理、冻结 BatchNorm、分层划分与最佳 checkpoint 选择。</li>
+            <li>导出带类别与归一化元数据的 ONNX，用于 CPU 或树莓派 4 推理。</li>
+          </ul>
+        </div>
+        <p class="project__note">仓库不包含数据集与权重。结果基于保留的混淆矩阵；考虑到 95 张测试图片的波动，准确率约为 93–95%。</p>`,
+      '[data-project="vslam"] .project__body': projectBody({
+        no: '07', tag: '计算机视觉', year: '2026', label: '查看项目',
+        title: 'vSLAM · 三维重建与 PnP',
+        summary: '使用 Python 与 OpenCV 的增量视觉重建流程：SIFT + RANSAC、对极几何、三角化，以及用 PnP 对每个关键帧定位。对真实书架重建出 1,600 个点，重投影误差 0.38 px。',
+        tags: ['vSLAM', 'OpenCV', 'PnP', '3D'],
+      }),
+      '[data-project="vslam"] .project__more': `
+        <dl class="project__facts">
+          <div><dt>角色</dt><dd>计算机视觉 · 重建与定位</dd></div>
+          <div><dt>技术栈</dt><dd>Python · OpenCV · NumPy · SIFT · RANSAC · PnP</dd></div>
+          <div><dt>状态</dt><dd>真实数据演示 · 1,600 个三维点</dd></div>
+        </dl>
+        <div class="prose">
+          <p><strong>vSLAM Fundamentals</strong> 是一个紧凑的增量视觉重建流程实现。它从校准图像序列构建稀疏三维地图，并用 PnP 对每个新关键帧相对已重建地图进行定位。项目包含双视图几何、三角化、单应性、基于光流的关键帧选择，以及可选的 bundle adjustment 优化。</p>
+          <ul>
+            <li>SIFT 检测与 ratio test 匹配；用 RANSAC 估计基础矩阵与本质矩阵。</li>
+            <li>增量循环：对地图做 PnP、三角化新点并更新地图。</li>
+            <li>真实书架演示：5 个关键帧、1,600 个点、0.38 px RMS，CPU 约 1.8 秒。</li>
+            <li>确定性合成测试：ATE 0.0096、旋转 RPE 0.058°、0.29 px RMS；5 个几何测试。</li>
+          </ul>
+        </div>
+        <p class="project__note">这是紧凑实现，不是生产级 SLAM：没有回环检测、重定位、传感器融合或稠密建图。单目地图的尺度是任意的。</p>`,
 
       '.capabilities .label': '<span class="label__num">04</span> 能力',
       '.capabilities .section-title': '商业、团队<br>与技术<em>基础。</em>',
